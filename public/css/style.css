@@ -1,0 +1,48 @@
+.l-header {
+    width: 100%;
+    background: #64bae2b8;
+    text-align: right;
+}
+
+a.btn {
+    color: #fff;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.b {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 13px;
+}
+
+img {
+    width: 108px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    background: #9E9E9E;
+    font-size: 13px;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.btn-green {
+    color: #fff;
+    background-color: #00bcd4;
+    float: right;
+}
