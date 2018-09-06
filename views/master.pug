@@ -15,7 +15,10 @@ html(lang="en")
                 h1(class="b") Login in
                 a(href="login" class="btn") Login in
                 a(href="register" class="btn") Sign up
+        each messages, kind in flashMessages
+            <div class"alert alert-#{kind} alert-flash">
+                each message in messages
+                    | #{message}
+            </div>
         block content
-        div(class="clear")
-        footer
-            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi atque corporis adipisci laudantium aspernatur, accusantium, deleniti iure ex odio nemo, quis perspiciatis ipsam animi sed nisi et hic repudiandae repellat!
+        

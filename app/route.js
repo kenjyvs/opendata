@@ -9,6 +9,7 @@ module.exports = function(app) {
 
     app.get('/login', function(req, res) {
         res.render('login');
+        req.flash('success', 'test')
     });
 
     app.get('/register', function(req, res) {
@@ -23,7 +24,8 @@ module.exports = function(app) {
                 req.body.password,
                 req.body.confirm_password,
             ).then(() => {
-                res.redirect('/?register=ok');
+                req.flash('success', 'Inscription réussie ! Vous pouvez maintenant vous connecter.')
+                res.redirect('/');
             }).catch(errors => {
                 res.render('register', { errors, user: req.body })
             })
